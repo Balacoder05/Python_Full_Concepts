@@ -44,3 +44,29 @@ add_pannu=lambda a,b :a*b
 
 output=(add_pannu(10,5))
 print(output)
+
+# def greet():
+#     print("Hello")
+#     greet()
+# greet()
+
+#map()
+#map(function,iterable)
+a=[1,2,3,4,5]
+result=map(lambda x:x*2,a)
+print(list(result))
+
+#filter
+#filter(function,iterable)
+
+a=[1,2,3,4,5]
+result=filter(lambda i:i%2==0,a)
+print(list(result))
+
+
+from functools import reduce
+
+a=[10,20,30,40,50]
+result=reduce(lambda x,y:x+y,a)
+print(result)
+
