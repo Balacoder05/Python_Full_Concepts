@@ -112,3 +112,10 @@ def greet():
 greet()
 
 #generator
+
+def func(n):
+    for i in range(n):
+        yield i
+obj=func(5)
+print(next(obj))
+print(next(obj))
