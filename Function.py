@@ -70,3 +70,45 @@ a=[10,20,30,40,50]
 result=reduce(lambda x,y:x+y,a)
 print(result)
 
+#enumerate
+
+a=["apple","Orange","banana","custed apple","mango"]
+for i,j in enumerate(a):
+    print(i,j)
+
+
+#zip
+
+a=[1,2,3]
+b=["a","b","c"]
+c=zip(a,b)
+print(list(c))
+
+#eval
+x="5+10"
+print(eval(x))
+
+#closure
+def outer():
+    name="bala"
+    def inner():
+        print("Hai",name)
+    inner()
+outer()
+
+
+#decorator
+
+def outer(func):
+    def inner():
+        print("start")
+        func()
+        print("end")
+    return inner
+
+@outer
+def greet():
+    print("hello Bala")
+greet()
+
+#generator
