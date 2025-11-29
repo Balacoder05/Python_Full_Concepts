@@ -10,4 +10,3 @@ for i in a:
     t=i+t
 print(t)
 
-#Using recursion
